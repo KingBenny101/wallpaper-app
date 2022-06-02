@@ -1,0 +1,16 @@
+Start:
+    Check for files in dir (will be implemented later):
+        Yes:
+            Go to MainMenu
+        No:
+            Download files
+            Go to MainMenu
+
+    Choose pics
+    Confirm:
+        Yes:
+            Get time for each pic
+            Move chosen pics to Documents dir
+            Set Wallpaper
+        No:
+            Go back to MainMenu 

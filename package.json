@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
+  "name": "inc-wallpaper-app",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A wallpaper setting app",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -18,5 +18,11 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^19.0.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
+    "superagent": "^7.1.3"
   }
 }

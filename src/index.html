@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+		/>
+		<link href="./styles.css" rel="stylesheet" />
+		<title>Incalculas Wallpaper App</title>
+	</head>
+	<body>
+		<template>
+			<div class="img-container">
+				<img src="" class="gallery-img">
+			</div>
+		</template>
+		<div class="app-container">
+			<div class="app-main">
+				<div class="main-window">
+					<div class="display-grid" id="img-grid"></div>
+
+				</div>
+				<div class="console">
+					<span id="console-msg"> This is the console </span>
+				</div>
+				<div class="main-btns">
+					<button class="app-btn" id="Favourites">Favourites</button>
+					<button class="app-btn" id="Clone">Clone</button>
+					<button class="app-btn" id="Locate">Locate</button>
+					<button class="app-btn" id="Set">Set</button>
+				</div>
+			</div>
+			<div class="app-footer app-version">
+				<span id="app-version">0.0.0</span>
+				<span id="electron-version">0.0.0</span>
+				<span id="node-version">0.0.0</span>
+				<span id="chrome-version">0.0.0</span>
+			</div>
+			<div class="app-footer app-copyright">
+				<span>&#169; KingBenny101 2022</span>
+			</div>
+		</div>
+
+		<!-- You can also require other files to run in this process -->
+		<script src="./renderer.js"></script>
+	</body>
+</html>
