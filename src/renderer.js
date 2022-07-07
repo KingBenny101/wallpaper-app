@@ -5,24 +5,33 @@
 // selectively enable features needed in the rendering
 // process.
 
-window.addEventListener('load',()=>{
-    var cloneBtn = document.getElementById("Clone");
-    cloneBtn.onclick = ()=>{
-        window.API.downloadFromGithub();
-    }
+window.addEventListener("load", () => {
+	// var cloneBtn = document.getElementById("Clone");
+	// cloneBtn.onclick = ()=>{
+	//     window.API.downloadFromGithub();
+	// }
 
-    var locateBtn = document.getElementById("Locate");
-    locateBtn.onclick = ()=>{
-        window.API.deleteFiles();
-    }
+	var deleteBtn = document.getElementById("Delete");
+	deleteBtn.onclick = () => {
+		window.API.deleteFiles();
+	};
 
-    var favouritesBtn = document.getElementById("Favourites");
-    favouritesBtn.onclick = ()=>{
-        window.API.selectFavourites();
-    }
-    
-    var setBtn = document.getElementById("Set");
-    setBtn.onclick = ()=>{
-        window.API.setImages();
-    }
-})
+	var checkBtn = document.getElementById("Check");
+	checkBtn.onclick = () => {
+		window.API.checkFiles();
+	};
+
+	var setBtn = document.getElementById("Set");
+	setBtn.onclick = () => {
+		window.API.setWallpaper();
+	};
+
+	var previewBtn = document.getElementById("Preview");
+	previewBtn.onclick = () => {
+		window.API.showPreview();
+	};
+
+	deleteBtn.disabled = true;
+	setBtn.disabled = true;
+	previewBtn.disabled = true;
+});

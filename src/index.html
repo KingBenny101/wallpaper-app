@@ -13,22 +13,25 @@
 	<body>
 		<template>
 			<div class="img-container">
-				<img src="" class="gallery-img">
+				<img src="" class="gallery-img" />
 			</div>
 		</template>
 		<div class="app-container">
 			<div class="app-main">
 				<div class="main-window">
-					<div class="display-grid" id="img-grid"></div>
-
+					<div class="display-grid" id="img-grid">
+						<div id="pls-press"><span>Please press the check button</span></div>
+					</div>
 				</div>
-				<div class="console">
-					<span id="console-msg"> This is the console </span>
+				<div class="console" id="console-container">
+					<ul id="console-msg">
+						<li>This is the console</li>
+					</ul>
 				</div>
 				<div class="main-btns">
-					<button class="app-btn" id="Favourites">Favourites</button>
-					<button class="app-btn" id="Clone">Clone</button>
-					<button class="app-btn" id="Locate">Locate</button>
+					<button class="app-btn" id="Check">Check</button>
+					<button class="app-btn" id="Delete">Delete</button>
+					<button class="app-btn" id="Preview">Preview</button>
 					<button class="app-btn" id="Set">Set</button>
 				</div>
 			</div>
