@@ -22,7 +22,6 @@
   "dependencies": {
     "adm-zip": "^0.5.9",
     "electron-settings": "^4.0.2",
-    "electron-store": "^8.0.1",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",
     "superagent": "^7.1.3",
