@@ -20,7 +20,7 @@
     "electron": "^19.0.7"
   },
   "dependencies": {
-    "adm-zip": "^0.5.9",
+    "adm-zip": "^0.5.10",
     "electron-settings": "^4.0.2",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",
